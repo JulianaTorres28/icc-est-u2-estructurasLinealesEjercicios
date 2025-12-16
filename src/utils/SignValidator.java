@@ -42,17 +42,4 @@ public class SignValidator {
                 || ultimo == '{' && character == '}';
     }
 
-    private static void runSingValidator() {
-        SignValidator signValidator = new SignValidator();
-        String cadena1 = "{[()]}"; // VALIDO
-        String cadena2 = "{[(])}"; // NO VALIDO
-
-        System.out.println("Cadena: " + cadena1 + " es valida? " + signValidator.isValid(cadena1));
-        System.out.println("Cadena: " + cadena2 + " es valida? " + signValidator.isValid(cadena2));
-    }
-
-    public static void main(String[] args) {
-        runSingValidator();
-    }
-
 }
